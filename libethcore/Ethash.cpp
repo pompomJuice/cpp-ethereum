@@ -234,7 +234,7 @@ public:
 			return;
 //		cdebug << "Attempting to abort";
 		m_abort = true;
-		for (unsigned timeout = 0; timeout < 100 && !m_aborted; ++timeout)
+		//for (unsigned timeout = 0; timeout < 100 && !m_aborted; ++timeout)
 			std::this_thread::sleep_for(chrono::milliseconds(30));
 //		if (!m_aborted)
 //			cwarn << "Couldn't abort. Abandoning OpenCL process.";
